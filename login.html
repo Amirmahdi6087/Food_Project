@@ -1,0 +1,44 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود</title>
+    <link rel="stylesheet" href="./webfonts/iransans-web/iransans.css" />
+
+    <link rel="stylesheet" href="style-auth.css" />
+    <style>
+      input[type='text']:focus,
+      input[type='password']:focus {
+        outline: none;
+        border: 1px solid #4caf50;
+        box-shadow: 0px 0px 5px rgba(0, 128, 0, 0.3);
+      }
+
+      button[type='submit'] {
+        background-color: #4caf50;
+      }
+
+      button[type='submit']:hover {
+        background-color: #45a049;
+      }
+
+      a {
+        color: #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>ورود</h2>
+        <div id="notification" class="hidden"></div>
+
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="نام کاربری" required />
+      <input type="password" id="password" placeholder="رمز عبور" required />
+      <button type="submit">ورود</button>
+    </form>
+    <p>حساب ندارید؟ <a href="register.html">ثبت‌نام</a></p>
+    <script src="login.js"></script>
+  </body>
+</html>
